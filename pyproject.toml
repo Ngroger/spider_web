@@ -1,0 +1,23 @@
+[project]
+name = "spider-web-firewall"
+version = "2.0.0"
+description = "Spider Web Firewall — Windows firewall + live network monitor + consolidated notifications"
+requires-python = ">=3.11"
+dependencies = [
+    "PySide6>=6.6.0",
+    "psutil>=5.9.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-qt>=4.2.0",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+# uv сам скачает Python, если его нет в системе
+python = "3.11"
